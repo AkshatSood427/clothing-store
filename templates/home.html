@@ -1,11 +1,14 @@
-<html>
-    <head>
-        <title>HOME</title>
-        <h1>HI FASHION GARMENTS</h1>
-    </head>
-    <body>
-        <button>NEW ORDER</button>
-        <button>VIEW ORDERS</button>
-        <button>BILLING</button>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body>
+    <h1>HI FASHION GARMENTS</h1>
+    <button onclick="location.href='{{ url_for('neworder_bp.neworder') }}'">NEW ORDER</button>
+    <button onclick="location.href='{{ url_for('vieworder_bp.vieworder') }}'">VIEW ORDERS</button>
+    <button onclick="location.href='{{ url_for('billing_bp.billing') }}'">BILLING</button>
+</body>
 </html>
